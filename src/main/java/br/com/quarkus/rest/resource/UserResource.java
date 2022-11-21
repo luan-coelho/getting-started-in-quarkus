@@ -48,7 +48,7 @@ public class UserResource {
 
     @Path("/{id}")
     @DELETE
-    public Response save(@PathParam("id") Long id) {
+    public Response delete(@PathParam("id") Long id) {
         userService.deleteById(id);
         return Response.noContent().build();
     }
